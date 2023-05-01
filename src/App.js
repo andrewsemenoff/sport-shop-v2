@@ -19,6 +19,7 @@ import SHOP_DATA from './shop-data';
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
+    console.log('I am in App useEffect');
     addCollectionAndDocuments('categories', SHOP_DATA)
   }, [])
   
