@@ -22,12 +22,12 @@ import {
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAItAbJ--KmrxfEG394sZrZvzeZ1ZuB2l0",
-  authDomain: "sport-shoping.firebaseapp.com",
-  projectId: "sport-shoping",
-  storageBucket: "sport-shoping.appspot.com",
-  messagingSenderId: "840415720497",
-  appId: "1:840415720497:web:050ac16f97b402b22ad110"
+  apiKey: "AIzaSyCgOvaVkCmtNZGgWnPP72HuRkJLDM5psf4",
+  authDomain: "sport-shoping-8b011.firebaseapp.com",
+  projectId: "sport-shoping-8b011",
+  storageBucket: "sport-shoping-8b011.appspot.com",
+  messagingSenderId: "87682285349",
+  appId: "1:87682285349:web:2e691374217eb38934e4cc"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
