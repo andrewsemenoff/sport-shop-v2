@@ -14,16 +14,10 @@ import Authentication from './routes/authentication/authentication.component';
 import Shop from './routes/shop/shop.component';
 import Checkout from './routes/checkout/checkout.component';
 import { setCurrentUser } from './store/user/user.reducer';
-import SHOP_DATA from './shop-data';
 
 const App = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    console.log('I am in App useEffect');
-    addCollectionAndDocuments('categories', SHOP_DATA)
-  }, [])
-  
- 
+
   useEffect(() => {
     const unsubscribe = onAuthStateChangedListener((user) => {
       if (user) {
@@ -33,7 +27,6 @@ const App = () => {
       console.log(setCurrentUser(pickedUser));
       dispatch(setCurrentUser(pickedUser));
     });
-
     return unsubscribe;
   }, []);
 
